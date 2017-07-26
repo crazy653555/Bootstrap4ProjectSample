@@ -75,8 +75,8 @@
             </a>
         </li>
 
-        <button id="tweet" class="btn btn-default pull-right hidden-xs">
-          <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+        <button id="tweet" class="btn btn-default pull-right hidden-xs" data-toggle="modal" data-target="#tweet-modal"> 
+          <span class="glyphicon glyphicon-pencil" aria-hidden="true" ></span>
           發文
         </button>
 
@@ -88,7 +88,8 @@
           </button>
           <ul class="dropdown-menu">
             <li><a href="#">個人檔案</a></li>
-            <li><a href="#">設定</a></li>
+            <li><a href="#">個人檔案</a></li>
+            <li><a href="#">個人檔案</a></li>
           </ul>
         </div>
 
@@ -171,139 +172,182 @@
           </div>
         </div>
 
-        <div id="profile-settings" class="card">
-          <ul class="nav nav-pills nav-stacked">
-            <li role="presentation" class="active">
-              <a href="#">
-              帳戶
-              <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
-              </a>
-            </li>
-
-            <li role="presentation">
-              <a href="#">
-              安全性
-              <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
-            </a>
-            </li>
-
-            <li role="presentation">
-              <a href="#">
-              通知
-              <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
-            </a>
-            </li>
-
-            <li role="presentation">
-              <a href="#">
-              設計
-              <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
-            </a>
-            </li>
-          </ul>
-
-        </div>
-
       </div>
       <!-- profile end-->
 
-
       <!-- main -->
       <div id="main" class="col-sm-12 col-md-6">
-        <ul id="account-tabs" class="nav nav-tabs nav-justified">
-          <li role="presentation" class="active">
-            <a href="#account-user" data-toggle="tab">使用者資訊</a>
-          </li>
 
-          <li role="presentation">
-            <a href="#account-language" data-toggle="tab">語言</a>
-          </li>
+        <ol class="breadcrumb card">
+          <li><a href="#">首頁</a></li>
+          <li><a href="#">個人檔案</a></li>
+          <li class="active">動態消息</li>
+        </ol>
 
-          <li role="presentation">
-            <a href="#account-mobile" data-toggle="tab">行動裝置</a>
-          </li>
-
-        </ul>
-
-
-        <div class="tab-content card">
-          <div role="tabpanel" class="tab-pane  active" id="account-user">
-            <div id="account-user" role="tabpanel" class="tab-pane active">
-              <form class="form-horizontal">
-                <div class="form-group">
-                  <label class="col-sm-3 control-label">姓名</label>
-                  <div class="col-sm-9">
-                    <input type="text" class="form-control" value="陳大強">
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label class="col-sm-3 control-label">使用者名稱</label>
-                  <div class="col-sm-9">
-                    <div class="input-group">
-                      <div class="input-group-addon">@</div>
-                      <input type="text" class="form-control" value="jonnydoo">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label class="col-sm-3 control-label">電子郵件</label>
-                  <div class="col-sm-9">
-                    <input type="email" class="form-control" value="jonnydoo@dogmail.com">
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <div class="col-sm-offset-3 col-sm-9">
-                    <button type="submit" class="btn btn-primary">儲存變更</button>
-                  </div>
-                </div>
-
-              </form>
-            </div>
-          </div>
-
-          <div role="tabpanel" class="tab-pane " id="account-language">
-            語言頁次
-          </div>
-
-          <div role="tabpanel" class="tab-pane " id="account-mobile">
-            行動裝置頁次
-          </div>
-
+        <div class="alert alert-success" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h3>推文通知</h3>
+          你已發布一則新推文
+          <a href="#" class="alert-link">點按此處以查看你的推文</a>
         </div>
 
-      </div>
+        <div class="alert alert-info" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h3>推文通知</h3>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:65%"></div>
+          </div>
+        </div>
 
+
+        <div id="main-card" class="card">
+          <form id="new-message">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="發生了什麼事?">
+              <span class="input-group-addon">
+              <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+              </span>
+            </div>
+          </form>
+
+          <ul id="feed" class="list-unstyled">
+            <li>
+              <img src="imgs/w-3.png" class="feed-avatar img-circle">
+              <div class="feed-post">
+                <h5>翁來
+                  <smail>@dogeoficial - 3 小時前</smail>
+                </h5>
+                <p>在你修擄狗狗的同時，你也修滷了自己!</p>
+              </div>
+              <div class="action-list">
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="回覆">
+                  <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+                </a>
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="轉推">
+                  <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                  <span class="retweet-count">6</span>
+                </a>
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="棒">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <img src="imgs/w-2.png" class="feed-avatar img-circle">
+              <div class="feed-post">
+                <h5>翁大頭
+                  <smail>@dogeoficial - 4 小時前</smail>
+                </h5>
+                <p>這是狗兒的一小步，卻是毛小的一大步!</p>
+              </div>
+              <div class="action-list">
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="回覆">
+                  <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+                </a>
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="轉推">
+                  <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+                  <span class="retweet-count">10</span>
+                </a>
+                <a href="#" data-toggle="tooltip" data-placement="bottom" title="棒">
+                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="text-center">
+          <ul class="pagination pagination-lg">
+            <li class="disabled"><a href="#" aria-label="上一頁">
+              <span aria-hidden="true">&laquo;</span></a></li>
+            <li class="active"><a href="#">1<span class="sr-only">(目前頁面)</span></a></li>
+            <li><a href="#">2</a></li>
+            <li class="disabled"><a href="#">...</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li class="disabled"><a href="#" aria-label="下一頁">
+              <span aria-hidden="true">&raquo;</span></a></li>
+
+      </div>
+      <!-- main end-->
 
       <div id="right-content" class="col-md-3 hidden-sm hidden-xs">
-        <ul class="list-group">
-          <li class="list-group-item list-group-item-info">
-            狗狗的統計數據
-            <span class="label label-success">3</span>
-          </li>
+        <div id="who-follow" class="card">
+          <div class="card-header">
+            你可能也會喜歡
+          </div>
+          <div class="card-block">
+            <ul class="list-unstyled">
+              <li>
+                <img src="imgs/logo3.png" class="img-rounded">
+                <div class="info">
+                  <strong>瘋狂貓咪</strong>
+                  <a href="#" role="button" tabindex="-1" data-toggle="popover" data-trigger="focus" title="你或許會想關注" class="btn btn-default clearfix">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true">
+                    </span>
+                    關注
+                  </a>
+                </div>
+              </li>
+              <li>
+                <img src="imgs/logo1.png" class="img-rounded">
+                <div class="info">
+                  <strong>免費配給警報</strong>
+                  <a href="#" role="button" tabindex="-1"  data-toggle="popover" data-trigger="focus" title="你或許會想關注" class="btn btn-default clearfix">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true">
+                    </span>
+                    關注
+                  </a>
+                </div>
+              </li>
+          </div>
+        </div>
 
-          <li class="list-group-item ">
-            狗狗的統計數據
-            <span class="label label-danger">37</span>
-            
-          </li>
-
-          <li class="list-group-item ">
-            狗狗的統計數據
-            <span class="label label-default">2</span>
-            
-          </li>
-
-          <li class="list-group-item ">
-            狗狗的統計數據
-            <span class="badge glyphicon glyphicon-star" aria-hidden="true">30</span>
-            
-          </li>
+        <div id="app-info" class="card">
+          <div class="card-block">
+            @2015 SampleApp
+            <ul class="list-unstyled list-inline">
+              <li><a href="#">關於</a></li>
+              <li><a href="#">條款與隱私政策</a></li>
+              <li><a href="#">輔助說明</a></li>
+              <li><a href="#">狀態</a></li>
+              <li><a href="#">聯絡資訊</a></li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <a href="#">連結其他的通訊錄</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+    <div class="modal fade" id="tweet-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" daa-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">發布新推文</h4>
+        </div>
+        <div class="modal-body">
+          <textarea class="form-control" rows="4" placeholder="你想說甚麼?" maxlength="140"></textarea>
+        </div>
+        <div class="modal-footer">
+          <span class="char-count pull-left" data-max="140">140</span>
+          <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+          <button type="button" class="btn btn-primary">儲存變更</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
