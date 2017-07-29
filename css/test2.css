@@ -392,3 +392,42 @@ div#app-info{
 div#who-follow li .info .glyphicon-ok{
   color:#5cb85c;
 }
+
+#messages-modal .btn-message{
+  position: absolute;
+  right: 3em;
+  top:0.75em;
+}
+
+
+
+#messages-modal .modal-body{
+  max-height: 32rem;
+  overflow: auto;
+}
+
+#messages-modal li{
+  padding:0.75rem;
+  border-bottom: 0.1rem solid #e6e6e6;
+}
+
+#messages-modal li:hover{
+  background-color: #e6e6e6;
+}
+
+#messages-modal li a:hover{
+  text-decoration:none;
+}
+
+#messages-modal li img{
+  max-width: 15%;
+}
+
+#messages-modal .msg-content{
+  display: inline-block;
+  color:#000;
+}
+#messages-modal .msg-content h5{
+  font-size: 1em;
+  font-weight: bold;
+}
