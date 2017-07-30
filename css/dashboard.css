@@ -1,0 +1,43 @@
+.transition,
+.transition:hover,
+.transition:focus{
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition:all 150ms ease-in-out;
+  -ms-transition:all 150ms ease-in-out;
+  -o-transition:all 150ms ease-in-out;
+  transition:all 150ms ease-in-out;
+}
+
+html,body{
+  position:relative;
+  height: 100%;
+  background-color: #e5e9ec;
+}
+
+nav.navbar-fixed-top{
+  background-color: #fff;
+  border:none;
+}
+
+nav .top-left-menu{
+  background-color: #252830;
+  display:-webkit-flex;
+  display:flex;
+  align-items:center;
+}
+
+.navbar-brand{
+  height: auto;
+}
+
+.navbar-brand h1{
+  margin:0;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #fff;
+}
+
+nav .header-refresh{
+  margin-left: auto;
+  color:#fff;
+}
