@@ -163,3 +163,90 @@ nav #nav-menu{
 #nav-profile img{
   max-height: 2.3em;
 }
+
+#side-menu{
+  background-color: #1b1e24;
+  padding-top:7.2rem ;
+  height: 100%;
+  position:fixed;
+}
+
+
+#side-menu .profile-block > * {
+  display: inline-block;
+}
+
+#side-menu .profile-block img{
+  width:70px;
+}
+
+#side-menu .profile-title{
+  color: #fff;
+  margin-left: 1rem;
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+
+#side-menu .profile-title small{
+  display:block;
+}
+
+#side-menu ul.nav{
+  margin-top: 1rem;
+}
+
+#side-menu ul.nav a{
+  color:#8b91a0;
+}
+
+#side-menu ul.nav a:hover,
+#side-menu ul.nav a:focus{
+  color:#fff;
+  background-color: inherit;
+}
+
+#side-menu ul.nav a .glyphicon{
+  margin-right: 0.7rem;;
+}
+
+#side-menu ul.nav a .glyphicon.pull-right{
+  margin-top:0.2rem;
+}
+
+#side-menu ul.nav a .badge{
+  background-color: #1ca095;
+}
+
+#side-menu ul.nav .nav-divider{
+  background-color: #252830;
+}
+
+#side-menu ul.nav ul{
+  margin-left: 10%;
+}
+
+#side-menu ul.nav ul a{
+  display: block;
+  background-color: #2b303b;
+  padding:1rem;
+  margin-bottom:0.3rem;
+  border-radius: 0.25em;
+}
+
+#side-menu ul.nav a:hover{
+  text-decoration: none;
+  background-color: #434857;
+}
+
+#side-menu ul.nav a:focus .glyphicon.pull-right{
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+#side-menu ul.nav a .glyphicon.pull-right{
+  margin-top:0.2rem;
+  will-change:transform;
+}
