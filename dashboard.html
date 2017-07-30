@@ -17,43 +17,92 @@
     <![endif]-->
 
 </head>
-  <body>
-    <nav class="navbar navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="row">
 
-          <div class="col-sm-3 top-left-menu">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="webapp.html">
-                <h1>主控台</h1>
-              </a>
+<body>
+  <nav class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="row">
 
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false">
+        <div class="col-sm-3 top-left-menu">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="webapp.html">
+              <h1>主控台</h1>
+            </a>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false">
                 <span class="sr-only">切換下拉選單</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-            </div>
-
-          
-            <a href="#" data-toggle="tooltip" data-placement="bottom" data-delay="500" title="Refresh Data" class="header-refresh pull-right">
-              <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
-            </a>
           </div>
 
-          <form id="search" role="search" class="hidden-xs col-sm-3">
-            <div class="input-group">
-              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-              <input type="text" class="form-control transition" placeholder="Search..">
-            </div>
-          </form> 
+
+          <a href="#" data-toggle="tooltip" data-placement="bottom" data-delay="500" title="Refresh Data" class="header-refresh pull-right">
+              <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+            </a>
         </div>
+
+        <form id="search" role="search" class="hidden-xs col-sm-3">
+          <div class="input-group">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <input type="text" class="form-control transition" placeholder="Search..">
+          </div>
+        </form>
+
+        <div id="nav-menu" class="collapse navbar-collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li>
+              <div id="btn-notifications" class="btn-group">
+                <span class="badge">3</span>
+                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">通知</button>
+                <ul id="notification-list" class="dropdown-menu pull-right">
+                  <li>
+                    <a href="#">
+                      <span class="badge"></span>
+                      <img src="imgs/w-3.png" class="img-circle">
+                      <div class="notification-message">
+                        <strong>萊卡</strong>
+                        <p>嗨!最近好嗎?</p>
+                        <em class="since">2小時前</em>
+                      </div>
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="#">
+                      <span class="badge"></span>
+                      <img src="imgs/w-3.png" class="img-circle">
+                      <div class="notification-message">
+                        <strong>萊卡</strong>
+                        <p>嗨!最近好嗎?</p>
+                        <em class="since">2小時前</em>
+                      </div>
+                    </a>
+                  </li>
+
+                   <li>
+                    <a href="#">
+                      <span class="badge"></span>
+                      <img src="imgs/w-3.png" class="img-circle">
+                      <div class="notification-message">
+                        <strong>萊卡</strong>
+                        <p>嗨!最近好嗎?</p>
+                        <em class="since">2小時前</em>
+                      </div>
+                    </a>
+                  </li>
+              </div>
+          </ul>
+        </div>
+
       </div>
-    </nav>
-  </body>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/dashboard.js"></script>
+    </div>
+  </nav>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/dashboard.js"></script>
+
 </html>
