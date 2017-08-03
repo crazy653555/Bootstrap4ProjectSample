@@ -9,12 +9,15 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/dashboard.css?20170712">
 
+
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 
 </head>
 
@@ -149,33 +152,33 @@
                   收入
                 </a>
               </li>
-                <li>
+              <li>
                 <a href="#" class="transition">
                   支出
                 </a>
               </li>
             </ul>
           </li>
-           <li>
+          <li>
             <a href="#" class="transition">
               <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
               即時資訊
               <span class="badge pull-right" aria-hidden="true">12</span>              
             </a>
           </li>
-           <li>
+          <li>
             <a href="#projects-opts" class="transition" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="projects-opts">
               <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
               專案
               <span class="glyphicon glyphicon-menu-left pull-right transition" aria-hidden="true"></span>              
             </a>
-             <ul class="collapse list-unstyled" id="projects-opts">
+            <ul class="collapse list-unstyled" id="projects-opts">
               <li>
                 <a href="#" class="transition">
                   收入
                 </a>
               </li>
-                <li>
+              <li>
                 <a href="#" class="transition">
                   支出
                 </a>
@@ -191,18 +194,41 @@
         <div class="card" id="pic-charts">
           <div class="card-block">
             <h2>整體分析</h2>
-            
+            <div class="round-chart" data-percent="42">
+              <span>
+                42
+                <small>
+                  %<br>
+                  常態性的
+                </small>
+              </span>
+            </div>
+
+            <div class="round-chart" data-percent="87">
+              <span>
+                87
+                <small>
+                %<br>
+                有意識的
+                </small>
+              </span>
+            </div>
+
           </div>
-        </div>    
+        </div>
 
       </div>
     </div>
   </div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.easypiechart.min.js"></script>
+  <script src="js/dashboard.js"></script>
+
+ 
+
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/dashboard.js"></script>
 
 </html>

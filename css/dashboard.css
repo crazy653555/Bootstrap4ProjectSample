@@ -281,3 +281,33 @@ nav #nav-menu{
   margin-bottom:1.5rem;
   color: #252830;
 }
+
+.round-chart{
+  display: inline-block;
+  position: relative;
+}
+
+.round-chart + .round-chart{
+  float:right;
+}
+
+
+.round-chart span{
+  font-size:3em;
+  font-weight: 100;
+  line-height: 1.7rem;
+  width:12rem;
+  height: 4.4rem;
+  text-align: center;
+  position: absolute;
+  margin:auto;
+  top:0;
+  bottom:0;
+  left: 0;
+  right: 0;
+}
+
+.round-chart span>small{
+  font-size:2rem;
+  font-weight: 400;
+}
