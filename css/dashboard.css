@@ -333,3 +333,15 @@ nav #nav-menu{
   float:right;
   color:#8b91a0;
 }
+
+.loading{
+  position:fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-image: url('../imgs/loading.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #e5e9ec;
+}
