@@ -311,3 +311,25 @@ nav #nav-menu{
   font-size:2rem;
   font-weight: 400;
 }
+
+
+#quick-info .card-block{
+  display:flex;
+  flex-direction:column;
+}
+
+#quick-info .quick-stats{
+  font-size: 2rem;
+  line-height: 3rem;
+  border-bottom:0.1rem solid #e5e9ec;
+}
+
+#quick-info .quick-stats strong{
+  font-weight:300;
+}
+
+#quick-info .quick-stats span{
+  font-weight: 300;
+  float:right;
+  color:#8b91a0;
+}
