@@ -391,3 +391,7 @@ nav #nav-menu{
 #real-time .label{
   margin-top:0.25rem;
 }
+
+#daily-usage area-chart{
+  height: 200px;
+}

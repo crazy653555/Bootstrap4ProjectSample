@@ -152,4 +152,37 @@ $(document).ready(function () {
     $('#free-space').text(freeSpacePercentage + '%');
   },2000);
 
+
+
+  $('#daily-usage .area-chart').highcharts({
+    title:{
+      text:'',
+    },
+    tooltip:{
+      pointFormat:'{series.name}:<b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions:{
+      pie:{
+        dataLabels:{
+          enabled:true,
+          style:{
+            fontWeight:'300'
+          }
+        }
+      }
+    },
+    series:[{
+      type:'pie',
+      name:'時間佔比',
+      data:[
+        ['前院',10.38],
+        ['衣櫥',26.33],
+        ['游泳池',51.03],
+        ['向老闆依樣',4.77],
+        ['吠叫',3.93]        
+      ]
+    }]
+  });
+
+
 });
