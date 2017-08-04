@@ -8,7 +8,7 @@
   <title>Hello EveryBody</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/dashboard.css?20170712">
-
+  <link rel="stylesheet" href="css/switchery.min.css">
 
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -227,27 +227,27 @@
               <span>78</span>
             </div>
 
-             <div class="quick-stats">
+            <div class="quick-stats">
               <strong>本月:</strong>
               <span>78</span>
             </div>
 
-             <div class="quick-stats">
+            <div class="quick-stats">
               <strong>最高紀錄:</strong>
               <span>78</span>
             </div>
 
-             <div class="quick-stats">
+            <div class="quick-stats">
               <strong>跳出率:</strong>
               <span>78</span>
             </div>
 
-             <div class="quick-stats">
+            <div class="quick-stats">
               <strong>停留時間:</strong>
               <span>78</span>
             </div>
 
-             <div class="quick-stats">
+            <div class="quick-stats">
               <strong>新連線:</strong>
               <span>78</span>
             </div>
@@ -261,22 +261,37 @@
           </div>
         </div>
 
-
+        <div class="card" id="ration-stock">
+          <div class="card-block">
+            <h2>配合主要庫存</h2>
+            <div class="stacked-area"></div>
+            <div class="switch">
+              查看主要庫存
+              <input type="checkbox" class="switchery" checked />
+              <div class="clearfix"></div>
+            </div>
+            <div class="switch">
+              隱藏空的庫存
+              <input type="checkbox" class="switchery" />
+              <div class="clerfix"></div>
+            </div>
+          </div>
+        </div>
 
 
       </div>
-    </div>
-  </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="https://code.highcharts.com/highcharts-more.js"></script>
-  
-  <script src="js/jquery.easypiechart.min.js"></script>
-  <script src="js/dashboard.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="js/bootstrap.js"></script>
 
- 
+      <script src="https://code.highcharts.com/highcharts.js"></script>
+      <script src="https://code.highcharts.com/highcharts-more.js"></script>
+      
+      <script src="js/jquery.easypiechart.min.js"></script>
+      <script src="js/switchery.min.js"></script>
+
+      <script src="js/dashboard.js"></script>
+
 
 </body>
 
