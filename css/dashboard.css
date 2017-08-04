@@ -370,3 +370,24 @@ nav #nav-menu{
 #ration-stock .switchery{
   float:right;
 }
+
+#real-time li{
+  font-size: 1.8rem;
+  font-weight: 300;
+  border-bottom: 0.1rem solid #e5e9ec;
+  padding:0.5rem 0;
+}
+
+#real-time .badge.ok{
+  background-color:#1bc98e;
+}
+
+#real-time .badge span,
+#real-time .label{
+  color:#fff;
+}
+
+#real-time badge,
+#real-time .label{
+  margin-top:0.25rem;
+}
