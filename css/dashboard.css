@@ -417,3 +417,31 @@ nav .header-buttons{
     float:none;
   }
 }
+
+@media(max-width:48em){
+  #nav-menu #btn-notifications > .badge{
+    right: inherit;
+    left:10rem;
+  }
+}
+
+@media(max-width:48em){
+  #btn-notifications,
+  #btn-notifications > button {
+    width:100%;
+    text-align:left;
+  }
+}
+
+@media(max-width:48em){
+  #notification-list{
+    margin:1.25rem;
+    margin-left:2rem;
+    background-color: #e5e9ec;
+  }
+
+  #notification-list a{
+    background: #fff;
+    opacity: 1;
+  }  
+}
