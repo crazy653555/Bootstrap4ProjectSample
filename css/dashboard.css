@@ -456,3 +456,16 @@ nav .header-buttons{
   overflow: hidden;
   background-color: #e5e5e5;
 }
+
+@media(max-width:48rem){
+  .round-chart,
+  .round-chart canvas{
+    display: block;
+    margin:auto;
+  }
+
+  .round-chart + .round-chart{
+    margin-top:2rem;
+    float:none;
+  }
+}
