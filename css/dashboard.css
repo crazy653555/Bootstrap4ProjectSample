@@ -468,4 +468,10 @@ nav .header-buttons{
     margin-top:2rem;
     float:none;
   }
+
+}
+
+#content{
+  height:30em;
+  overflow: auto;
 }

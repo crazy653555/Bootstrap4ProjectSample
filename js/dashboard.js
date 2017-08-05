@@ -197,4 +197,13 @@ $(document).ready(function () {
       $('form#search').slideUp('fast');
     }
   })
+
+  //輪播時間控制
+  $('.carousel').carousel({
+    interval:5000
+  });
+
+  $('#content').scrollspy({
+    target:'#content-spy'
+  })
 });
