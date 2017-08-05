@@ -445,3 +445,14 @@ nav .header-buttons{
     opacity: 1;
   }  
 }
+
+#nav-menu.navbar-collapse{
+  max-height: 39rem;
+}
+
+#nav-menu .divider{
+  height: 0.1rem;
+  margin: 0.9rem 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
