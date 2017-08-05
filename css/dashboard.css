@@ -89,7 +89,8 @@ nav #nav-menu{
   z-index:99;
 }
 
-#btn-notifications .btn-link{
+#btn-notifications .btn-link,
+#nav-menu li a{
   padding-top:1.5rem;
   color: #252830;
   font-weight:500;
@@ -394,4 +395,25 @@ nav #nav-menu{
 
 #daily-usage area-chart{
   height: 200px;
+}
+
+nav .header-buttons{
+  margin-left: auto;
+  color: #FFF;
+}
+
+@media(max-width:48em){
+  form#search{
+    display: none;
+  }
+}
+
+#nav-menu{
+  float:right;
+}
+
+@media(max-width:48em){
+  #nav-menu{
+    float:none;
+  }
 }
