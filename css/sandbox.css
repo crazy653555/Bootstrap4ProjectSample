@@ -1,0 +1,19 @@
+.btn-purple{
+  color:#fff;
+  background-color: #803bdb;
+  background-color: #822fba;
+}
+
+.btn-purple:hover,
+.btn-purple:focus,
+.btn-purple:active,
+.btn-purple:active{
+  color: #ffffff;
+  background-color: #6b39ad;
+  border-collapse: #822fba;
+}
+
+
+.self-test .btn{
+    line-height:1.72857143;
+}
