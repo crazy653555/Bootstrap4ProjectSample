@@ -108,13 +108,47 @@
         </div>
       </div>
 
+      <hr/>
 
+      <!-- 開啟模擬視窗按鈕 -->
+      <input id="github-username" type="text" class="form-control" placeholder="在此輸入你的 github 使用者名稱">
+      <button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#githubModal">
+        開啟摩太視窗範例
+      </button>
+
+
+      <!-- 模態勢窗 -->
+      <div class="modal fade" id="githubModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title"></h4>
+            </div>
+
+            <div class="modal-body">
+
+
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+              <button type="button" class="btn btn-success">儲存變更</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </div>
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/sandbox.js"></script>
 </body>
 
 
